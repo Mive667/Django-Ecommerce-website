@@ -1,4 +1,7 @@
+{% load static %}
+
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -11,34 +14,55 @@
 
     <title>GreatKart | One of the Biggest Online Shopping Platform</title>
 
-    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link
+      href="{% static 'ecommerce/images/favicon.ico' %}"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
 
     <!-- jQuery -->
-    <script src="js/jquery-2.0.0.min.js" type="text/javascript"></script>
+    <script
+      src="{% static 'ecommerce/js/jquery-2.0.0.min.js' %}"
+      type="text/javascript"
+    ></script>
 
     <!-- Bootstrap4 files-->
-    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <script
+      src="{% static 'ecommerce/js/bootstrap.bundle.min.js' %}"
+      type="text/javascript"
+    ></script>
+    <link
+      href="{% static 'ecommerce/css/bootstrap.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Font awesome 5 -->
     <link
-      href="fonts/fontawesome/css/all.min.css"
+      href="{% static 'ecommerce/fonts/fontawesome/css/all.min.css' %}"
       type="text/css"
       rel="stylesheet"
     />
 
     <!-- custom style -->
-    <link href="css/ui.css" rel="stylesheet" type="text/css" />
     <link
-      href="css/responsive.css"
+      href="{% static 'ecommerce/css/ui.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'ecommerce/css/responsive.css' %}"
       rel="stylesheet"
       media="only screen and (max-width: 1200px)"
     />
 
     <!-- custom javascript -->
-    <script src="js/script.js" type="text/javascript"></script>
+    <script
+      src="{% static 'ecommerce/js/script.js' %}"
+      type="text/javascript"
+    ></script>
 
-    <script type="text/javascript">
+    <script type="{% static 'ecommerce/text/javascript' %}">
       /// some script
 
       // jquery ready start
@@ -96,7 +120,10 @@
           <div class="row align-items-center">
             <div class="col-lg-2 col-md-3 col-6">
               <a href="./" class="brand-wrap">
-                <img class="logo" src="./images/logo.png" />
+                <img
+                  class="logo"
+                  src="{% static 'ecommerce/images/logo.png' %}"
+                />
               </a>
               <!-- brand-wrap.// -->
             </div>
@@ -185,7 +212,10 @@
     <section class="section-intro padding-y-sm">
       <div class="container">
         <div class="intro-banner-wrap">
-          <img src="images/banners/1.jpg" class="img-fluid rounded" />
+          <img
+            src="{% static 'ecommerce/images/banners/1.jpg' %}"
+            class="img-fluid rounded"
+          />
         </div>
       </div>
       <!-- container //  -->
@@ -207,7 +237,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/1.jpg" />
+                <img src="{% static 'ecommerce/images/items/1.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -222,7 +252,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/2.jpg" />
+                <img src="{% static 'ecommerce/images/items/2.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -237,7 +267,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/3.jpg" />
+                <img src="{% static 'ecommerce/images/items/3.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -252,7 +282,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/4.jpg" />
+                <img src="{% static 'ecommerce/images/items/4.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -267,7 +297,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/5.jpg" />
+                <img src="{% static 'ecommerce/images/items/5.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -282,7 +312,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/6.jpg" />
+                <img src="{% static 'ecommerce/images/items/6.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -297,7 +327,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/7.jpg" />
+                <img src="{% static 'ecommerce/images/items/7.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"
@@ -312,7 +342,7 @@
           <div class="col-md-3">
             <div class="card card-product-grid">
               <a href="./product-detail.html" class="img-wrap">
-                <img src="images/items/9.jpg" />
+                <img src="{% static 'ecommerce/images/items/9.jpg' %}" />
               </a>
               <figcaption class="info-wrap">
                 <a href="./product-detail.html" class="title"

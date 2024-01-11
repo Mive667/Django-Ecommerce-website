@@ -40,7 +40,7 @@ class MyAccountManager(BaseUserManager):
 
 
 # Create your models here.
-def Account(AbstractBaseUser):
+class Account(AbstractBaseUser):
     class Meta:
         verbose_name = 'Account'
         verbose_name_plural = 'Accounts'

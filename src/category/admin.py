@@ -6,5 +6,16 @@ Super user account:
     password: superuser123456
 """
 
+
+class CategoryAdmin(admin.ModelAdmin):
+    prepopulated_fields = {
+        'slug': ('category_name',),
+    }
+    list_display = (
+        'category_name',
+        'slug',
+    )
+
+
 # Register your models here.
-admin.site.register(Category)
+admin.site.register(Category, CategoryAdmin)

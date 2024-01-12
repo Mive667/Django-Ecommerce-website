@@ -2,7 +2,12 @@
 
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-
+from store.models import Product
 
 def index(request):
-    return render(request, 'ecommerce/index.html')
+    products = Product.objects.all().filter(is_available=True)
+    context = {
+        'products': products
+    }
+    return render(request, 'ecommerce/index.html', context)
+

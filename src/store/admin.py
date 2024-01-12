@@ -5,12 +5,12 @@ from . models import Product
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'product_name',
+        'category',
         'price',
         'stock',
-        'category',
-        'created_at',
-        'modified_at',
         'is_available',
+        'created_at',
+        'modified_at',   
     )
     prepopulated_fields = {
         'slug': ('product_name',),
@@ -18,4 +18,4 @@ class ProductAdmin(admin.ModelAdmin):
 
 
 # Register your models here.
-admin.site.register(Product)
+admin.site.register(Product, ProductAdmin)
